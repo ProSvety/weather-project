@@ -1,0 +1,123 @@
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+.h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: white;
+}
+.container {
+  display: block;
+  padding: 10px 10px 20px 10px;
+  background-color: black;
+  color: lightgrey;
+  width: 293px;
+  height: 633px;
+}
+p {
+  margin: 1px;
+}
+.currentlocation {
+  display: block;
+  border: black;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto 20px auto;
+  padding: auto;
+}
+.infotop {
+  display: block;
+  margin: 20px 0px 40px 0px;
+}
+.currenttemp {
+  font-size: 26px;
+  text-decoration: solid;
+  font-weight: bold;
+}
+.dailytemp {
+  display: inline;
+}
+.weekday {
+  color: gold;
+  font-weight: bold;
+}
+.city {
+  color: gold;
+  font-size: 24px;
+}
+.favourite .city {
+  font-size: 18px !important;
+  display: inline-block;
+  width: 48%;
+  padding-left: 5px;
+}
+.small {
+  display: block;
+  border-style: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 10px;
+}
+.maxtemperature {
+  font-weight: bold;
+}
+.favourite .maxtemperature {
+  display: inline-block;
+  width: 15%;
+}
+.favourite .mintemperature {
+  display: inline-block;
+  width: 15%;
+}
+.choosecity {
+  text-align: center;
+}
+.favourite {
+  display: block;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: lightgray;
+  margin: 20px auto;
+  padding: 20 px 10px 0px 10px;
+  box-shadow: lightgrey 0px 2px 5px;
+}
+
+.row {
+  margin: 10px 0px 30px 0px;
+  padding: auto;
+}
+.col {
+  margin: 0px auto 0px auto;
+  padding: auto;
+}
+.choosecitybutton {
+  background-color: gold;
+  border-radius: 5px;
+  border: none;
+  color: gray;
+  font-size: 14px;
+  width: 60px;
+}
+.entertext {
+  background-color: lightgrey;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.favourite .state {
+  display: inline-block;
+  width: 17%;
+  text-align: right;
+}
+.favouritelist {
+  display: block;
+  position: absolute;
+  bottom: 30%;
+  width: 270px;
+}
+.state {
+  font-size: 18px;
+}
