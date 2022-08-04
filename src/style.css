@@ -121,3 +121,11 @@ p {
 .state {
   font-size: 18px;
 }
+.gitHubLink {
+  background-color: gold;
+  border-radius: 5px;
+  border: none;
+  color: gray;
+  font-size: 14px;
+  width: 60px;
+}
