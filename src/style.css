@@ -81,7 +81,7 @@ p {
   border-style: solid;
   border-radius: 5px;
   border-color: lightgray;
-  margin: 20px auto;
+  margin: 30px 0px 20px 0px;
   padding: 20 px 10px 0px 10px;
   box-shadow: lightgrey 0px 2px 5px;
 }
@@ -129,5 +129,6 @@ p {
   border: none;
   color: gray;
   font-size: 14px;
-  width: 1000px;
+  width: 100px;
+  margin: 20px 0px 20px 0px;
 }
