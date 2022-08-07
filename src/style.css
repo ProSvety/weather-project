@@ -52,7 +52,7 @@ p {
 .favourite .city {
   font-size: 18px !important;
   display: inline-block;
-  width: 48%;
+  width: 45%;
   padding-left: 5px;
 }
 .small {
@@ -114,7 +114,6 @@ p {
 }
 .favouritelist {
   display: block;
-  position: absolute;
   bottom: 30%;
   width: 270px;
 }
@@ -129,6 +128,6 @@ p {
   border: none;
   color: gray;
   font-size: 14px;
-  width: 100px;
-  margin: 20px 0px 20px 0px;
+  width: 160px;
+  margin: 20px 0px 20px 50px;
 }
