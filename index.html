@@ -26,9 +26,14 @@
         <div class="currentlocation">
           <h2 class="city">{{City}}</h2>
           <h2 class="currenttemp">{{temp}}</h2>
+          <div class= "currentdescription">{{sunny}}</div>
           <div class="dailytemp">
             <span class="maxtemperature">{{max}}</span>
             <span class="mintemperature">{{min}}</span>
+          </div>
+          <div class="additional">
+            <span class="windspeed">Wind: 0.6 m/s</span>
+            <span class="humidity">Humidity: 67%</span>
           </div>
         </div>
         <div class="row">
@@ -103,7 +108,7 @@
         />
         <button type="submit" class="choosecitybutton">Search</button>
       </form>
-      
+      <button type="submit" class="addtofavourite">add to favourite</button>
       <div class="favouritelist">
         <div class="favourite">
           <span class="city">London</span>
