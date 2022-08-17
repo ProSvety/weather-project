@@ -89,7 +89,7 @@ function searchByCity(city) {
     let currentCity = document.querySelector("h2.city");
     currentCity.innerHTML = data.name;
     let temp = document.querySelector("h2.currenttemp");
-    temp.innerHTML = icon + Math.round(data.main.temp) + "°C";
+    temp.innerHTML = icon + Math.round(celsiusTemperature) + "°C";
     let maxTemp = document.querySelector("span.maxtemperature");
     maxTemp.innerHTML = Math.round(data.main.temp_max) + "°C";
     let minTemp = document.querySelector("span.mintemperature");
@@ -99,7 +99,7 @@ function searchByCity(city) {
     let humidity = document.querySelector("span.additional.humidity");
     humidity.innerHTML = "Humidity:" + data.main.humidity;
     let description = document.querySelector("span.currentdescription");
-    description.innerHTML = data.weather.description;
+    description.innerHTML = data.weather[0].description;
   });
 }
 
@@ -113,7 +113,7 @@ function searchByCoords(lat, lon) {
     let currentCity = document.querySelector("h2.city");
     currentCity.innerHTML = data.name;
     let temp = document.querySelector("h2.currenttemp");
-    temp.innerHTML = icon + Math.round(data.main.temp) + "°C";
+    temp.innerHTML = icon + Math.round(celsiusTemperature) + "°C";
     let maxTemp = document.querySelector("span.maxtemperature");
     maxTemp.innerHTML = Math.round(data.main.temp_max) + "°C";
     let minTemp = document.querySelector("span.mintemperature");
@@ -123,9 +123,31 @@ function searchByCoords(lat, lon) {
     let humidity = document.querySelector("span.additional.humidity");
     humidity.innerHTML = "Humidity:" + data.main.humidity;
     let description = document.querySelector("span.currentdescription");
-    description.innerHTML = data.weather.description;
+    description.innerHTML = data.weather[0].description;
   });
 }
+celsiusTemperature = response.data.main.temp;
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("currentTemp");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("currentTemp");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusemperature);
 
 function onload() {
   let h1 = document.querySelector("h1");
