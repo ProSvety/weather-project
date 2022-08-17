@@ -94,6 +94,12 @@ function searchByCity(city) {
     maxTemp.innerHTML = Math.round(data.main.temp_max) + "°C";
     let minTemp = document.querySelector("span.mintemperature");
     minTemp.innerHTML = Math.round(data.main.temp_min) + "°C";
+    let description = document.querySelector("span.currentdescription");
+    description.innerHTML = data.weather.description;
+    let windspeed = document.querySelector("span.additional.windspeed");
+    windspeed.innerHTML = "Wind: " + data.wind.speed + "m/s";
+    let humidity = document.querySelector("span.additional.humidity");
+    humidity.innerHTML = "Humidity:" + data.main.humidity;
   });
 }
 
@@ -112,6 +118,12 @@ function searchByCoords(lat, lon) {
     maxTemp.innerHTML = Math.round(data.main.temp_max) + "°C";
     let minTemp = document.querySelector("span.mintemperature");
     minTemp.innerHTML = Math.round(data.main.temp_min) + "°C";
+    let description = document.querySelector("span.currentdescription");
+    description.innerHTML = data.weather.description;
+    let windspeed = document.querySelector("span.additional.windspeed");
+    windspeed.innerHTML = "Wind: " + data.wind.speed + "m/s";
+    let humidity = document.querySelector("span.additional.humidity");
+    humidity.innerHTML = "Humidity:" + data.main.humidity;
   });
 }
 
