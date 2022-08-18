@@ -88,6 +88,7 @@ function searchByCity(city) {
     icon = icon ? icon : "";
     let currentCity = document.querySelector("h2.city");
     currentCity.innerHTML = data.name;
+    let celsiusTemperature = response.data.main.temp;
     let temp = document.querySelector("h2.currenttemp");
     temp.innerHTML = icon + Math.round(celsiusTemperature) + "°C";
     let maxTemp = document.querySelector("span.maxtemperature");
@@ -126,7 +127,6 @@ function searchByCoords(lat, lon) {
     description.innerHTML = data.weather[0].description;
   });
 }
-celsiusTemperature = response.data.main.temp;
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
@@ -147,7 +147,7 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusemperature);
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 function onload() {
   let h1 = document.querySelector("h1");
