@@ -25,9 +25,10 @@
       <div class="infotop">
         <div class="currentlocation">
           <h2 class="city">{{City}}</h2>
+          <h2 class="icon">none</h2>
           <h2 class="currenttemp">{{temp}}</h2>
           <span class="units" 
-          <a href="#" id="celsius-link">°C</a> |
+          <a href="#" id="celsius-link" class="active">°C</a> |
           <a href="#" id="fahrenheit-link">°F</a></span>
           <div class= "currentdescription">{{sunny}}</div>
           <div class="dailytemp">
@@ -110,8 +111,9 @@
           id="search-city-input"
         />
         <button type="submit" class="choosecitybutton">Search</button>
+        <button type="submit" class="addtofavourite">add city to favourite</button>
       </form>
-      <button type="submit" class="addtofavourite">add to favourite</button>
+      
       <div class="favouritelist">
         <div class="favourite">
           <span class="city">London</span>
