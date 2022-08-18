@@ -90,7 +90,7 @@ function searchByCity(city) {
     currentCity.innerHTML = data.name;
     let celsiusTemperature = response.data.main.temp;
     let temp = document.querySelector("h2.currenttemp");
-    temp.innerHTML = icon + Math.round(celsiusTemperature) + "°C";
+    temp.innerHTML = icon + Math.round(celsiusTemperature);
     let maxTemp = document.querySelector("span.maxtemperature");
     maxTemp.innerHTML = Math.round(data.main.temp_max) + "°C";
     let minTemp = document.querySelector("span.mintemperature");
@@ -114,7 +114,7 @@ function searchByCoords(lat, lon) {
     let currentCity = document.querySelector("h2.city");
     currentCity.innerHTML = data.name;
     let temp = document.querySelector("h2.currenttemp");
-    temp.innerHTML = icon + Math.round(celsiusTemperature) + "°C";
+    temp.innerHTML = icon + Math.round(celsiusTemperature);
     let maxTemp = document.querySelector("span.maxtemperature");
     maxTemp.innerHTML = Math.round(data.main.temp_max) + "°C";
     let minTemp = document.querySelector("span.mintemperature");
