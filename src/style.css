@@ -151,7 +151,8 @@ p {
   display: inline-block;
 }
 .active {
-  color: gold;
+  color: lightgrey;
+  text-decoration: none;
 }
 .addtofavourite {
   color: gold;
@@ -162,8 +163,12 @@ p {
   font-size: 10px;
   text-align: center;
   border: none;
+  text-decoration: underline;
 }
 .icon {
   display: inline-block;
   vertical-align: middle;
+}
+a {
+  color: gold;
 }
